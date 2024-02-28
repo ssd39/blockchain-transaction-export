@@ -96,7 +96,7 @@ async function StoreBulkTransactions() {
           block_hash: val.blockHash,
           max_fee_per_gas: val.maxFeePerGas?.toString(),
           max_priority_fee_per_gas: val.maxPriorityFeePerGas?.toString(),
-          transaction_type: val.type,
+          transaction_type: Number(val.typeHex),
           receipt_gas_used: val.gasUsed.toString(),
           receipt_cumulative_gas_used: val.cumulativeGasUsed.toString(),
           receipt_effective_gas_price: val.effectiveGasPrice.toString(),

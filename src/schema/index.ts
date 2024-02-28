@@ -27,10 +27,6 @@ export interface schema {
   block_hash: Hash | null;
   max_fee_per_gas?: string | undefined;
   max_priority_fee_per_gas?: string | undefined;
-  transaction_type?:
-    | "eip1559"
-    | "eip2930"
-    | "eip4844"
-    | "legacy";
+  transaction_type?: number;
   receipt_effective_gas_price?: string;
 }

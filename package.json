@@ -1,0 +1,24 @@
+{
+  "name": "transaction-export-bigq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && cp service_account.json build/service-account.json && node build/index.js"
+  },
+  "author": "dwij patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.22",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.5.0",
+    "viem": "^2.7.15"
+  }
+}
